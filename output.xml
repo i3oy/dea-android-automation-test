@@ -1,0 +1,3472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20211109 09:23:44.303" rpa="false" schemaversion="2">
+<suite id="s1" name="UserstoryPSgear-ll" source="/Users/pisitchuthongkum/Documents/Documents - Pisit’s MacBook Air/dea-android-automation-test/UserstoryPSgear-ll.robot">
+<kw name="Open app" library="Keyword_login_photo" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=android</arg>
+<arg>platformVersion=10</arg>
+<arg>deviceName=IRAQIJHAGEGAKNKN</arg>
+<arg>app=/Users/pisitchuthongkum/Documents/Documents - Pisit’s MacBook Air/dea-android-automation-test/com.tdem.tdiag.dev.0.0.15.apk</arg>
+<arg>appPackage=com.tdem.tdiag.dev</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211109 09:23:44.520" endtime="20211109 09:23:53.853"/>
+</kw>
+<status status="PASS" starttime="20211109 09:23:44.520" endtime="20211109 09:23:53.854"/>
+</kw>
+<test id="s1-t1" name="Scenario : Acceptance 20 -1">
+<kw name="Domain" library="Keyword_login_photo">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.tdem.tdiag.dev:id/btnDomain</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211109 09:23:53.854" endtime="20211109 09:23:54.599"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btnDomain}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211109 09:23:54.617" level="INFO">Clicking element 'id=com.tdem.tdiag.dev:id/btnDomain'.</msg>
+<status status="PASS" starttime="20211109 09:23:54.599" endtime="20211109 09:23:54.754"/>
+</kw>
+<status status="PASS" starttime="20211109 09:23:53.854" endtime="20211109 09:23:54.755"/>
+</kw>
+<kw name="Swipe Up" library="Keyword_login_photo">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.tdem.tdiag.dev:id/relativePicker</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211109 09:23:54.757" endtime="20211109 09:23:55.674"/>
+</kw>
+<kw name="Get Element Size" library="AppiumLibrary">
+<var>${element_size}</var>
+<arg>id=com.tdem.tdiag.dev:id/relativePicker</arg>
+<doc>Get element size</doc>
+<msg timestamp="20211109 09:23:55.801" level="INFO">Element 'id=com.tdem.tdiag.dev:id/relativePicker' size: {'height': 460, 'width': 1080} </msg>
+<msg timestamp="20211109 09:23:55.801" level="INFO">${element_size} = {'height': 460, 'width': 1080}</msg>
+<status status="PASS" starttime="20211109 09:23:55.675" endtime="20211109 09:23:55.801"/>
+</kw>
+<kw name="Get Element Location" library="AppiumLibrary">
+<var>${element_location}</var>
+<arg>id=com.tdem.tdiag.dev:id/relativePicker</arg>
+<doc>Get element location</doc>
+<msg timestamp="20211109 09:23:55.918" level="INFO">Element 'id=com.tdem.tdiag.dev:id/relativePicker' location: {'x': 0, 'y': 1668} </msg>
+<msg timestamp="20211109 09:23:55.918" level="INFO">${element_location} = {'x': 0, 'y': 1668}</msg>
+<status status="PASS" starttime="20211109 09:23:55.801" endtime="20211109 09:23:55.918"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${start_x}</var>
+<arg>${element_location['x']} + (${element_size['width']} * 0.5)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211109 09:23:55.921" level="INFO">${start_x} = 540.0</msg>
+<status status="PASS" starttime="20211109 09:23:55.919" endtime="20211109 09:23:55.921"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${start_y}</var>
+<arg>${element_location['y']} + (${element_size['height']} * 0.7)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211109 09:23:55.924" level="INFO">${start_y} = 1990.0</msg>
+<status status="PASS" starttime="20211109 09:23:55.921" endtime="20211109 09:23:55.924"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${end_x}</var>
+<arg>${element_location['x']} + (${element_size['width']} * 0.5)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211109 09:23:55.926" level="INFO">${end_x} = 540.0</msg>
+<status status="PASS" starttime="20211109 09:23:55.924" endtime="20211109 09:23:55.926"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${end_y}</var>
+<arg>${element_location['y']} + (${element_size['height']} * 0.3)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211109 09:23:55.929" level="INFO">${end_y} = 1806.0</msg>
+<status status="PASS" starttime="20211109 09:23:55.926" endtime="20211109 09:23:55.929"/>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>${start_x}</arg>
+<arg>${start_y}</arg>
+<arg>${end_x}</arg>
+<arg>${end_y}</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211109 09:23:55.929" endtime="20211109 09:23:57.055"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211109 09:23:58.060" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211109 09:23:57.056" endtime="20211109 09:23:58.061"/>
+</kw>
+<status status="PASS" starttime="20211109 09:23:54.756" endtime="20211109 09:23:58.062"/>
+</kw>
+<kw name="Click done" library="Keyword_login_photo">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.tdem.tdiag.dev:id/btnConfirm</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211109 09:23:58.064" endtime="20211109 09:23:58.168"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btnDondomain}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211109 09:23:58.186" level="INFO">Clicking element 'id=com.tdem.tdiag.dev:id/btnConfirm'.</msg>
+<status status="PASS" starttime="20211109 09:23:58.169" endtime="20211109 09:23:58.311"/>
+</kw>
+<status status="PASS" starttime="20211109 09:23:58.062" endtime="20211109 09:23:58.312"/>
+</kw>
+<kw name="User id valid" library="Keyword_login_photo">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.tdem.tdiag.dev:id/editUserID</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211109 09:23:58.313" endtime="20211109 09:23:58.937"/>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<arg>id=com.tdem.tdiag.dev:id/editUserID</arg>
+<doc>Clears the text field identified by `locator`.</doc>
+<msg timestamp="20211109 09:23:58.947" level="INFO">Clear text field 'id=com.tdem.tdiag.dev:id/editUserID'</msg>
+<status status="PASS" starttime="20211109 09:23:58.937" endtime="20211109 09:23:59.044"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${clickeditUserID}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211109 09:23:59.055" level="INFO">Clicking element 'id=com.tdem.tdiag.dev:id/editUserID'.</msg>
+<status status="PASS" starttime="20211109 09:23:59.045" endtime="20211109 09:23:59.724"/>
+</kw>
+<kw name="Is Keyboard Shown" library="AppiumLibrary">
+<doc>Return true if Android keyboard is displayed or False if not displayed
+No parameters are used.</doc>
+<status status="PASS" starttime="20211109 09:23:59.725" endtime="20211109 09:24:00.462"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=com.tdem.tdiag.dev:id/editUserID</arg>
+<arg>${usernameTDEM}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20211109 09:24:00.479" level="INFO">Typing text 'knundhap' into text field 'id=com.tdem.tdiag.dev:id/editUserID'</msg>
+<status status="PASS" starttime="20211109 09:24:00.462" endtime="20211109 09:24:01.309"/>
+</kw>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>4</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:01.310" endtime="20211109 09:24:02.205"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<arg>reason=None</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211109 09:24:03.209" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211109 09:24:02.205" endtime="20211109 09:24:03.210"/>
+</kw>
+<status status="PASS" starttime="20211109 09:23:58.312" endtime="20211109 09:24:03.210"/>
+</kw>
+<kw name="Password valid" library="Keyword_login_photo">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.tdem.tdiag.dev:id/editPassword</arg>
+<arg>timeout=10</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211109 09:24:03.212" endtime="20211109 09:24:03.930"/>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<arg>id=com.tdem.tdiag.dev:id/editPassword</arg>
+<doc>Clears the text field identified by `locator`.</doc>
+<msg timestamp="20211109 09:24:03.947" level="INFO">Clear text field 'id=com.tdem.tdiag.dev:id/editPassword'</msg>
+<status status="PASS" starttime="20211109 09:24:03.931" endtime="20211109 09:24:04.092"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${clickeditPassword}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211109 09:24:04.103" level="INFO">Clicking element 'id=com.tdem.tdiag.dev:id/editPassword'.</msg>
+<status status="PASS" starttime="20211109 09:24:04.092" endtime="20211109 09:24:04.791"/>
+</kw>
+<kw name="Is Keyboard Shown" library="AppiumLibrary">
+<doc>Return true if Android keyboard is displayed or False if not displayed
+No parameters are used.</doc>
+<status status="PASS" starttime="20211109 09:24:04.792" endtime="20211109 09:24:05.481"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=com.tdem.tdiag.dev:id/editPassword</arg>
+<arg>${passwordTDEM}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20211109 09:24:05.497" level="INFO">Typing text '1234@abcd' into text field 'id=com.tdem.tdiag.dev:id/editPassword'</msg>
+<status status="PASS" starttime="20211109 09:24:05.482" endtime="20211109 09:24:06.446"/>
+</kw>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>4</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:06.447" endtime="20211109 09:24:07.103"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:03.211" endtime="20211109 09:24:07.104"/>
+</kw>
+<kw name="Login button" library="Keyword_login_photo">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.tdem.tdiag.dev:id/btnLogin</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211109 09:24:07.106" endtime="20211109 09:24:07.962"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btnLogin}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211109 09:24:07.981" level="INFO">Clicking element 'id=com.tdem.tdiag.dev:id/btnLogin'.</msg>
+<status status="PASS" starttime="20211109 09:24:07.962" endtime="20211109 09:24:08.104"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<arg>reason=None</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211109 09:24:10.105" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211109 09:24:08.104" endtime="20211109 09:24:10.106"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:07.105" endtime="20211109 09:24:10.106"/>
+</kw>
+<kw name="Enter PIN matched" library="Keyword_login_photo">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.tdem.tdiag.dev:id/pinView</arg>
+<arg>timeout=30</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211109 09:24:10.109" endtime="20211109 09:24:11.161"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${index}</var>
+<value>6</value>
+<iter>
+<var name="${index}">0</var>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>12</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:11.163" endtime="20211109 09:24:11.273"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:11.163" endtime="20211109 09:24:11.274"/>
+</iter>
+<iter>
+<var name="${index}">1</var>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>12</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:11.275" endtime="20211109 09:24:11.741"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:11.274" endtime="20211109 09:24:11.741"/>
+</iter>
+<iter>
+<var name="${index}">2</var>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>12</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:11.742" endtime="20211109 09:24:12.266"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:11.742" endtime="20211109 09:24:12.266"/>
+</iter>
+<iter>
+<var name="${index}">3</var>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>12</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:12.267" endtime="20211109 09:24:12.774"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:12.267" endtime="20211109 09:24:12.774"/>
+</iter>
+<iter>
+<var name="${index}">4</var>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>12</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:12.775" endtime="20211109 09:24:13.263"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:12.774" endtime="20211109 09:24:13.263"/>
+</iter>
+<iter>
+<var name="${index}">5</var>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>12</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:13.264" endtime="20211109 09:24:14.339"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:13.264" endtime="20211109 09:24:14.339"/>
+</iter>
+<status status="PASS" starttime="20211109 09:24:11.162" endtime="20211109 09:24:14.340"/>
+</for>
+<status status="PASS" starttime="20211109 09:24:10.107" endtime="20211109 09:24:14.340"/>
+</kw>
+<kw name="VIN-No : Acceptance 20 -1" library="Keyword_Storychecksheet">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.tdem.tdiag.dev:id/txtVin</arg>
+<arg>timeout=20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211109 09:24:14.341" endtime="20211109 09:24:16.777"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${txtVIN}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211109 09:24:16.802" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup'.</msg>
+<status status="PASS" starttime="20211109 09:24:16.778" endtime="20211109 09:24:17.825"/>
+</kw>
+<for flavor="IN">
+<var>${Datatest}</var>
+<value>T</value>
+<value>E</value>
+<value>S</value>
+<value>P</value>
+<value>S</value>
+<value>H</value>
+<value>I</value>
+<value>L</value>
+<value>U</value>
+<value>X</value>
+<value>C</value>
+<value>H</value>
+<value>K</value>
+<value>S</value>
+<value>H</value>
+<value>T</value>
+<value>1</value>
+<iter>
+<var name="${Datatest}">T</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG T" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>48</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:17.844" endtime="20211109 09:24:17.945"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:17.843" endtime="20211109 09:24:17.945"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:17.828" endtime="20211109 09:24:17.945"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:17.827" endtime="20211109 09:24:17.945"/>
+</iter>
+<iter>
+<var name="${Datatest}">E</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG E" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>33</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:17.953" endtime="20211109 09:24:18.955"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:17.952" endtime="20211109 09:24:18.955"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:17.946" endtime="20211109 09:24:18.956"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:17.946" endtime="20211109 09:24:18.956"/>
+</iter>
+<iter>
+<var name="${Datatest}">S</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG S" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>47</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:18.970" endtime="20211109 09:24:19.805"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:18.969" endtime="20211109 09:24:19.806"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:18.957" endtime="20211109 09:24:19.806"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:18.956" endtime="20211109 09:24:19.807"/>
+</iter>
+<iter>
+<var name="${Datatest}">P</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG P" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>44</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:19.821" endtime="20211109 09:24:20.656"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:19.820" endtime="20211109 09:24:20.657"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:19.808" endtime="20211109 09:24:20.657"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:19.807" endtime="20211109 09:24:20.657"/>
+</iter>
+<iter>
+<var name="${Datatest}">S</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG S" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>47</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:20.670" endtime="20211109 09:24:21.506"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:20.670" endtime="20211109 09:24:21.507"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:20.658" endtime="20211109 09:24:21.507"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:20.658" endtime="20211109 09:24:21.507"/>
+</iter>
+<iter>
+<var name="${Datatest}">H</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG H" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>36</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:21.521" endtime="20211109 09:24:22.358"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:21.520" endtime="20211109 09:24:22.358"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:21.509" endtime="20211109 09:24:22.359"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:21.508" endtime="20211109 09:24:22.359"/>
+</iter>
+<iter>
+<var name="${Datatest}">I</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG I" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>37</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:22.371" endtime="20211109 09:24:23.202"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:22.370" endtime="20211109 09:24:23.203"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:22.360" endtime="20211109 09:24:23.203"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:22.359" endtime="20211109 09:24:23.203"/>
+</iter>
+<iter>
+<var name="${Datatest}">L</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG L" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>40</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:23.215" endtime="20211109 09:24:24.151"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:23.214" endtime="20211109 09:24:24.152"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:23.204" endtime="20211109 09:24:24.152"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:23.203" endtime="20211109 09:24:24.152"/>
+</iter>
+<iter>
+<var name="${Datatest}">U</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG U" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>49</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:24.167" endtime="20211109 09:24:24.880"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:24.166" endtime="20211109 09:24:24.880"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:24.153" endtime="20211109 09:24:24.881"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:24.153" endtime="20211109 09:24:24.881"/>
+</iter>
+<iter>
+<var name="${Datatest}">X</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG X" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>52</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:24.896" endtime="20211109 09:24:25.698"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:24.896" endtime="20211109 09:24:25.699"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:24.882" endtime="20211109 09:24:25.699"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:24.881" endtime="20211109 09:24:25.699"/>
+</iter>
+<iter>
+<var name="${Datatest}">C</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG C" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>31</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:25.708" endtime="20211109 09:24:26.562"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:25.707" endtime="20211109 09:24:26.562"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:25.699" endtime="20211109 09:24:26.562"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:25.699" endtime="20211109 09:24:26.562"/>
+</iter>
+<iter>
+<var name="${Datatest}">H</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG H" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>36</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:26.571" endtime="20211109 09:24:27.408"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:26.570" endtime="20211109 09:24:27.408"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:26.563" endtime="20211109 09:24:27.409"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:26.563" endtime="20211109 09:24:27.409"/>
+</iter>
+<iter>
+<var name="${Datatest}">K</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG K" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>39</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:27.418" endtime="20211109 09:24:28.247"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:27.417" endtime="20211109 09:24:28.247"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:27.409" endtime="20211109 09:24:28.247"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:27.409" endtime="20211109 09:24:28.247"/>
+</iter>
+<iter>
+<var name="${Datatest}">S</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG S" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>47</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:28.258" endtime="20211109 09:24:29.100"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:28.258" endtime="20211109 09:24:29.101"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:28.248" endtime="20211109 09:24:29.101"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:28.248" endtime="20211109 09:24:29.101"/>
+</iter>
+<iter>
+<var name="${Datatest}">H</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG H" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>36</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:29.109" endtime="20211109 09:24:29.943"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:29.108" endtime="20211109 09:24:29.943"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:29.102" endtime="20211109 09:24:29.944"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:29.101" endtime="20211109 09:24:29.944"/>
+</iter>
+<iter>
+<var name="${Datatest}">T</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="ENG T" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>48</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:29.956" endtime="20211109 09:24:30.797"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:29.954" endtime="20211109 09:24:30.798"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:29.944" endtime="20211109 09:24:30.798"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:29.944" endtime="20211109 09:24:30.798"/>
+</iter>
+<iter>
+<var name="${Datatest}">1</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Datatest}' == '${Letters}[0]'</arg>
+<arg>Number 0</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[1]'</arg>
+<arg>Number 1</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[2]'</arg>
+<arg>Number 2</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[3]'</arg>
+<arg>Number 3</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[4]'</arg>
+<arg>Number 4</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[5]'</arg>
+<arg>Number 5</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[6]'</arg>
+<arg>Number 6</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[7]'</arg>
+<arg>Number 7</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[8]'</arg>
+<arg>Number 8</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[9]'</arg>
+<arg>Number 9</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[10]'</arg>
+<arg>ENG A</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[11]'</arg>
+<arg>ENG B</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[12]'</arg>
+<arg>ENG C</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[13]'</arg>
+<arg>ENG D</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[14]'</arg>
+<arg>ENG E</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[15]'</arg>
+<arg>ENG F</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[16]'</arg>
+<arg>ENG G</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[17]'</arg>
+<arg>ENG H</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[18]'</arg>
+<arg>ENG I</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[19]'</arg>
+<arg>ENG J</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[20]'</arg>
+<arg>ENG K</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[21]'</arg>
+<arg>ENG L</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[22]'</arg>
+<arg>ENG M</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[23]'</arg>
+<arg>ENG N</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[24]'</arg>
+<arg>ENG O</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[25]'</arg>
+<arg>ENG P</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[26]'</arg>
+<arg>ENG Q</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[27]'</arg>
+<arg>ENG R</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[28]'</arg>
+<arg>ENG S</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[29]'</arg>
+<arg>ENG T</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[30]'</arg>
+<arg>ENG U</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[31]'</arg>
+<arg>ENG V</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[32]'</arg>
+<arg>ENG W</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[33]'</arg>
+<arg>ENG X</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[34]'</arg>
+<arg>ENG Y</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[35]'</arg>
+<arg>ENG Z</arg>
+<arg>ELSE IF</arg>
+<arg>'${Datatest}' == '${Letters}[36]'</arg>
+<arg>MINUS</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Number 1" library="Keyword_Storychecksheet">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>8</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:30.802" endtime="20211109 09:24:31.652"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:30.801" endtime="20211109 09:24:31.652"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:30.799" endtime="20211109 09:24:31.652"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:30.798" endtime="20211109 09:24:31.652"/>
+</iter>
+<status status="PASS" starttime="20211109 09:24:17.825" endtime="20211109 09:24:31.653"/>
+</for>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>4</arg>
+<arg>metastate=None</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211109 09:24:31.653" endtime="20211109 09:24:32.475"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${txtKatashiki}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211109 09:24:32.492" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup'.</msg>
+<status status="PASS" starttime="20211109 09:24:32.475" endtime="20211109 09:24:33.399"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:14.340" endtime="20211109 09:24:33.400"/>
+</kw>
+<kw name="Click Confirm" library="Keyword_login_photo">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.tdem.tdiag.dev:id/btnConfirm</arg>
+<arg>timeout=10</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211109 09:24:33.401" endtime="20211109 09:24:35.496"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btnNext}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211109 09:24:35.516" level="INFO">Clicking element 'id=com.tdem.tdiag.dev:id/btnConfirm'.</msg>
+<status status="PASS" starttime="20211109 09:24:35.496" endtime="20211109 09:24:35.619"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<arg>reason=None</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211109 09:24:38.621" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211109 09:24:35.620" endtime="20211109 09:24:38.622"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:33.400" endtime="20211109 09:24:38.623"/>
+</kw>
+<kw name="Expand Diagnosis" library="Keyword_login_photo">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.tdem.tdiag.dev:id/header_model</arg>
+<arg>timeout=60</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211109 09:24:38.626" endtime="20211109 09:24:40.038"/>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Diagnosis</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" starttime="20211109 09:24:40.039" endtime="20211109 09:24:40.227"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<arg>reason=None</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211109 09:24:41.228" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211109 09:24:40.227" endtime="20211109 09:24:41.228"/>
+</kw>
+<status status="PASS" starttime="20211109 09:24:38.624" endtime="20211109 09:24:41.229"/>
+</kw>
+<kw name="Expand Test DUMMY" library="Keyword_login_photo">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]/android.view.ViewGroup</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211109 09:24:41.251" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]/android.view.ViewGroup'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211109 09:24:42.103" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211109 09:24:41.372" endtime="20211109 09:24:42.103"/>
+</kw>
+<msg timestamp="20211109 09:24:42.109" level="FAIL">ValueError: Element locator 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]/android.view.ViewGroup' did not match any elements.</msg>
+<status status="FAIL" starttime="20211109 09:24:41.230" endtime="20211109 09:24:42.109"/>
+</kw>
+<status status="FAIL" starttime="20211109 09:24:41.229" endtime="20211109 09:24:42.111"/>
+</kw>
+<kw name="Swipe Up part page" library="Keyword_login_photo">
+<status status="NOT RUN" starttime="20211109 09:24:42.112" endtime="20211109 09:24:42.112"/>
+</kw>
+<kw name="Select POWER STREERING Part" library="Keyword_noises">
+<status status="NOT RUN" starttime="20211109 09:24:42.113" endtime="20211109 09:24:42.113"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 1</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.113" endtime="20211109 09:24:42.113"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Reservoir tank confirmation (Outside)</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.114" endtime="20211109 09:24:42.114"/>
+</kw>
+<kw name="Answer Dirty" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.114" endtime="20211109 09:24:42.114"/>
+</kw>
+<kw name="Click Attachment" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.115" endtime="20211109 09:24:42.115"/>
+</kw>
+<kw name="Allow camera" library="Keyword_login_photo">
+<status status="NOT RUN" starttime="20211109 09:24:42.115" endtime="20211109 09:24:42.115"/>
+</kw>
+<kw name="Take a photo for Attachment" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.116" endtime="20211109 09:24:42.116"/>
+</kw>
+<kw name="Next Question 1" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.116" endtime="20211109 09:24:42.116"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 2</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.117" endtime="20211109 09:24:42.117"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Reservoir tank confirmation (Inside)</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.117" endtime="20211109 09:24:42.117"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Normal</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.117" endtime="20211109 09:24:42.118"/>
+</kw>
+<kw name="Answer Contaminants" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.118" endtime="20211109 09:24:42.118"/>
+</kw>
+<kw name="Swipe Up page" library="Keyword_login_photo">
+<status status="NOT RUN" starttime="20211109 09:24:42.119" endtime="20211109 09:24:42.119"/>
+</kw>
+<kw name="Input Customer contaminants" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.119" endtime="20211109 09:24:42.119"/>
+</kw>
+<kw name="Click Attachment" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.120" endtime="20211109 09:24:42.120"/>
+</kw>
+<kw name="Take a photo for Attachment" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.120" endtime="20211109 09:24:42.120"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.121" endtime="20211109 09:24:42.121"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 3</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.121" endtime="20211109 09:24:42.121"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Please confirm oil level.</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.122" endtime="20211109 09:24:42.122"/>
+</kw>
+<kw name="Answer NG" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.122" endtime="20211109 09:24:42.122"/>
+</kw>
+<kw name="Click Attachment" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.122" endtime="20211109 09:24:42.123"/>
+</kw>
+<kw name="Take a photo for Attachment" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.123" endtime="20211109 09:24:42.123"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.123" endtime="20211109 09:24:42.123"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 4</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.123" endtime="20211109 09:24:42.124"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Is customer complain about freeplay</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.124" endtime="20211109 09:24:42.124"/>
+</kw>
+<kw name="Answer Yes" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.124" endtime="20211109 09:24:42.124"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.124" endtime="20211109 09:24:42.124"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 5</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.125" endtime="20211109 09:24:42.125"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Which side found freeplay?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.125" endtime="20211109 09:24:42.125"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Vehicle preparation confirmation</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.125" endtime="20211109 09:24:42.125"/>
+</kw>
+<kw name="Answer Only Left" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.126" endtime="20211109 09:24:42.126"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.126" endtime="20211109 09:24:42.126"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 6</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.126" endtime="20211109 09:24:42.126"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>What is PS Gear condition (Inside after removing rack end)?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.126" endtime="20211109 09:24:42.127"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>removing rack end)?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.127" endtime="20211109 09:24:42.127"/>
+</kw>
+<kw name="Answer Rust" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.127" endtime="20211109 09:24:42.127"/>
+</kw>
+<kw name="Click Attachment" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.127" endtime="20211109 09:24:42.127"/>
+</kw>
+<kw name="Take a photo for Attachment" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.128" endtime="20211109 09:24:42.128"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.128" endtime="20211109 09:24:42.128"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 7</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.128" endtime="20211109 09:24:42.128"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Is customer complain about abnormal noise?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.128" endtime="20211109 09:24:42.128"/>
+</kw>
+<kw name="Answer Yes" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.129" endtime="20211109 09:24:42.129"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.129" endtime="20211109 09:24:42.129"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 8</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.129" endtime="20211109 09:24:42.129"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Which side found abnormal noise?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.129" endtime="20211109 09:24:42.130"/>
+</kw>
+<kw name="Answer Only Right" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.130" endtime="20211109 09:24:42.130"/>
+</kw>
+<kw name="Click Attachment" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.130" endtime="20211109 09:24:42.130"/>
+</kw>
+<kw name="Allow audio" library="Keyword_login_photo">
+<status status="NOT RUN" starttime="20211109 09:24:42.130" endtime="20211109 09:24:42.130"/>
+</kw>
+<kw name="Press the record button" library="Keyword_noises">
+<status status="NOT RUN" starttime="20211109 09:24:42.131" endtime="20211109 09:24:42.131"/>
+</kw>
+<kw name="Press stop the record button" library="Keyword_noises">
+<status status="NOT RUN" starttime="20211109 09:24:42.131" endtime="20211109 09:24:42.131"/>
+</kw>
+<kw name="Go to next step" library="Keyword_noises">
+<status status="NOT RUN" starttime="20211109 09:24:42.131" endtime="20211109 09:24:42.132"/>
+</kw>
+<kw name="Submit Result checksheet" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.132" endtime="20211109 09:24:42.132"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.132" endtime="20211109 09:24:42.132"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 9</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.132" endtime="20211109 09:24:42.132"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>What is engine condition?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.133" endtime="20211109 09:24:42.133"/>
+</kw>
+<kw name="Answer On small" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.133" endtime="20211109 09:24:42.133"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.133" endtime="20211109 09:24:42.133"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 10</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.133" endtime="20211109 09:24:42.134"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>What is oil temp condition?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.134" endtime="20211109 09:24:42.134"/>
+</kw>
+<kw name="Answer Normal" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.134" endtime="20211109 09:24:42.134"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.134" endtime="20211109 09:24:42.134"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 11</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.134" endtime="20211109 09:24:42.135"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Please input customer voice for oil temp condition.</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.135" endtime="20211109 09:24:42.135"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.135" endtime="20211109 09:24:42.135"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 12</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.135" endtime="20211109 09:24:42.135"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>What is driving condition?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.135" endtime="20211109 09:24:42.136"/>
+</kw>
+<kw name="Answer Stop driving" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.136" endtime="20211109 09:24:42.136"/>
+</kw>
+<kw name="Click Attachment" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.136" endtime="20211109 09:24:42.136"/>
+</kw>
+<kw name="Press the record video button" library="Keyword_noises">
+<status status="NOT RUN" starttime="20211109 09:24:42.136" endtime="20211109 09:24:42.136"/>
+</kw>
+<kw name="Press the stop video button" library="Keyword_noises">
+<status status="NOT RUN" starttime="20211109 09:24:42.136" endtime="20211109 09:24:42.136"/>
+</kw>
+<kw name="Click submit" library="Keyword_login_photo">
+<status status="NOT RUN" starttime="20211109 09:24:42.137" endtime="20211109 09:24:42.137"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.137" endtime="20211109 09:24:42.137"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 13</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.137" endtime="20211109 09:24:42.137"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>What is steering condition?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.137" endtime="20211109 09:24:42.138"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>A. Quick steering</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.138" endtime="20211109 09:24:42.138"/>
+</kw>
+<kw name="Answer No" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.138" endtime="20211109 09:24:42.138"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.138" endtime="20211109 09:24:42.138"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 14</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.138" endtime="20211109 09:24:42.139"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>B. Holding steering wheel</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.139" endtime="20211109 09:24:42.139"/>
+</kw>
+<kw name="Answer No" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.139" endtime="20211109 09:24:42.139"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.139" endtime="20211109 09:24:42.139"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 15</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.139" endtime="20211109 09:24:42.139"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>What is steering condition?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.140" endtime="20211109 09:24:42.140"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>C. Around neutral</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.140" endtime="20211109 09:24:42.140"/>
+</kw>
+<kw name="Answer No" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.140" endtime="20211109 09:24:42.140"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.140" endtime="20211109 09:24:42.140"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 16</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.140" endtime="20211109 09:24:42.141"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>What is steering condition?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.141" endtime="20211109 09:24:42.141"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>135deg(LH), 700deg(RH)</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.141" endtime="20211109 09:24:42.141"/>
+</kw>
+<kw name="Answer No" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.141" endtime="20211109 09:24:42.141"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.142" endtime="20211109 09:24:42.142"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 17</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.142" endtime="20211109 09:24:42.142"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>What is steering condition?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.142" endtime="20211109 09:24:42.142"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Ex. Rotate until steering lock</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.142" endtime="20211109 09:24:42.142"/>
+</kw>
+<kw name="Answer No" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.143" endtime="20211109 09:24:42.143"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.143" endtime="20211109 09:24:42.143"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 18</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.143" endtime="20211109 09:24:42.143"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>What is steering condition?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.143" endtime="20211109 09:24:42.143"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.143" endtime="20211109 09:24:42.143"/>
+</kw>
+<kw name="Answer No" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.144" endtime="20211109 09:24:42.144"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.144" endtime="20211109 09:24:42.144"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 19</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.144" endtime="20211109 09:24:42.144"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>What is steering condition?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.144" endtime="20211109 09:24:42.144"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.145" endtime="20211109 09:24:42.145"/>
+</kw>
+<kw name="Answer No Focus" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.145" endtime="20211109 09:24:42.145"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.145" endtime="20211109 09:24:42.145"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 20</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.146" endtime="20211109 09:24:42.146"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Is customer complain about heavy?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.146" endtime="20211109 09:24:42.146"/>
+</kw>
+<kw name="Answer Yes" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.146" endtime="20211109 09:24:42.146"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.146" endtime="20211109 09:24:42.146"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 21</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.146" endtime="20211109 09:24:42.147"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Which side found heavy?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.147" endtime="20211109 09:24:42.147"/>
+</kw>
+<kw name="Answer Only Right" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.147" endtime="20211109 09:24:42.147"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.147" endtime="20211109 09:24:42.147"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 22</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.147" endtime="20211109 09:24:42.147"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Please input Steering Torque (Nm)</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.147" endtime="20211109 09:24:42.148"/>
+</kw>
+<kw name="Input Customer complaint 20" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.148" endtime="20211109 09:24:42.148"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.148" endtime="20211109 09:24:42.148"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 23</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.148" endtime="20211109 09:24:42.148"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Is customer complain about leakage?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.148" endtime="20211109 09:24:42.148"/>
+</kw>
+<kw name="Answer Yes" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.148" endtime="20211109 09:24:42.148"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.149" endtime="20211109 09:24:42.149"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 24</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.149" endtime="20211109 09:24:42.149"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Leakage</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.149" endtime="20211109 09:24:42.149"/>
+</kw>
+<kw name="Answer Leakage" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.149" endtime="20211109 09:24:42.149"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.149" endtime="20211109 09:24:42.149"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 25</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.150" endtime="20211109 09:24:42.150"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Please specify leakage point</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.150" endtime="20211109 09:24:42.150"/>
+</kw>
+<kw name="Answer 1" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.150" endtime="20211109 09:24:42.150"/>
+</kw>
+<kw name="Click Attachment" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.150" endtime="20211109 09:24:42.150"/>
+</kw>
+<kw name="Take a photo for Attachment no Cropephoto" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.150" endtime="20211109 09:24:42.150"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.150" endtime="20211109 09:24:42.150"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Power Steering</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:42.150" endtime="20211109 09:24:42.151"/>
+</kw>
+<kw name="Submit Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.151" endtime="20211109 09:24:42.151"/>
+</kw>
+<kw name="Submit Result ?" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:42.151" endtime="20211109 09:24:42.151"/>
+</kw>
+<status status="FAIL" starttime="20211109 09:23:53.854" endtime="20211109 09:24:42.151">ValueError: Element locator 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]/android.view.ViewGroup' did not match any elements.</status>
+</test>
+<test id="s1-t2" name="Scenario : Acceptance preview 20-1">
+<kw name="Select POWER STREERING Part" library="Keyword_noises">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<arg>reason=None</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211109 09:24:43.155" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211109 09:24:42.153" endtime="20211109 09:24:43.156"/>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<arg>${PSG}</arg>
+<doc>Click text identified by ``text``.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211109 09:24:43.978" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211109 09:24:43.301" endtime="20211109 09:24:43.978"/>
+</kw>
+<msg timestamp="20211109 09:24:43.979" level="FAIL">ValueError: Element locator '//*[contains(@text,"POWER")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20211109 09:24:43.157" endtime="20211109 09:24:43.980"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<arg>reason=None</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:43.981" endtime="20211109 09:24:43.981"/>
+</kw>
+<status status="FAIL" starttime="20211109 09:24:42.152" endtime="20211109 09:24:43.982"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Power Steering</arg>
+<arg>timeout=240</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:43.982" endtime="20211109 09:24:43.983"/>
+</kw>
+<kw name="Preview" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:43.983" endtime="20211109 09:24:43.983"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:43.984" endtime="20211109 09:24:43.984"/>
+</kw>
+<kw name="Next Question 1" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:43.984" endtime="20211109 09:24:43.984"/>
+</kw>
+<kw name="Preview next PSGear" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:43.984" endtime="20211109 09:24:43.984"/>
+</kw>
+<kw name="Click Back page" library="Keyword_login_photo">
+<status status="NOT RUN" starttime="20211109 09:24:43.985" endtime="20211109 09:24:43.985"/>
+</kw>
+<status status="FAIL" starttime="20211109 09:24:42.152" endtime="20211109 09:24:43.985">ValueError: Element locator '//*[contains(@text,"POWER")]' did not match any elements.</status>
+</test>
+<test id="s1-t3" name="Scenario : Acceptance redo 20-1">
+<kw name="Click Redo checksheet" library="Keyword_Storychecksheet">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211109 09:24:44.992" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211109 09:24:43.989" endtime="20211109 09:24:44.992"/>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<arg>REDO</arg>
+<doc>Click text identified by ``text``.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211109 09:24:45.865" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-3.png"&gt;&lt;img src="appium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211109 09:24:45.140" endtime="20211109 09:24:45.866"/>
+</kw>
+<msg timestamp="20211109 09:24:45.867" level="FAIL">ValueError: Element locator '//*[contains(@text,"REDO")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20211109 09:24:44.993" endtime="20211109 09:24:45.868"/>
+</kw>
+<status status="FAIL" starttime="20211109 09:24:43.988" endtime="20211109 09:24:45.870"/>
+</kw>
+<kw name="Redo confirmmation" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.871" endtime="20211109 09:24:45.871"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 1</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.871" endtime="20211109 09:24:45.872"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Reservoir tank confirmation (Outside)</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.872" endtime="20211109 09:24:45.872"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.872" endtime="20211109 09:24:45.873"/>
+</kw>
+<kw name="Answer Normal" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.873" endtime="20211109 09:24:45.873"/>
+</kw>
+<kw name="Next Question 1" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.874" endtime="20211109 09:24:45.874"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 2</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.874" endtime="20211109 09:24:45.874"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Reservoir tank confirmation (Inside)</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.875" endtime="20211109 09:24:45.875"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.876" endtime="20211109 09:24:45.876"/>
+</kw>
+<kw name="Answer Normal" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.877" endtime="20211109 09:24:45.877"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.877" endtime="20211109 09:24:45.877"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 3</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.877" endtime="20211109 09:24:45.878"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Please confirm oil level.</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.878" endtime="20211109 09:24:45.879"/>
+</kw>
+<kw name="Answer OK" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.879" endtime="20211109 09:24:45.879"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.879" endtime="20211109 09:24:45.880"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 4</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.880" endtime="20211109 09:24:45.880"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Is customer complain about freeplay (Kata)?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.881" endtime="20211109 09:24:45.881"/>
+</kw>
+<kw name="Answer No" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.881" endtime="20211109 09:24:45.882"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.882" endtime="20211109 09:24:45.882"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 5</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.883" endtime="20211109 09:24:45.883"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Is customer complain about abnormal noise?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.883" endtime="20211109 09:24:45.883"/>
+</kw>
+<kw name="Answer No" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.883" endtime="20211109 09:24:45.884"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.884" endtime="20211109 09:24:45.884"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 6</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.884" endtime="20211109 09:24:45.884"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Is customer complain about heavy?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.885" endtime="20211109 09:24:45.885"/>
+</kw>
+<kw name="Answer No" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.885" endtime="20211109 09:24:45.885"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.885" endtime="20211109 09:24:45.885"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Question 7</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.886" endtime="20211109 09:24:45.886"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Is customer complain about leakage?</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.886" endtime="20211109 09:24:45.886"/>
+</kw>
+<kw name="Answer No" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.886" endtime="20211109 09:24:45.886"/>
+</kw>
+<kw name="Next Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.886" endtime="20211109 09:24:45.887"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Power Steering</arg>
+<arg>timeout=30</arg>
+<arg>error=None</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20211109 09:24:45.887" endtime="20211109 09:24:45.887"/>
+</kw>
+<kw name="Submit Question" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.887" endtime="20211109 09:24:45.887"/>
+</kw>
+<kw name="Submit Result ?" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.888" endtime="20211109 09:24:45.888"/>
+</kw>
+<kw name="Part checked" library="Keyword_Storychecksheet">
+<status status="NOT RUN" starttime="20211109 09:24:45.888" endtime="20211109 09:24:45.888"/>
+</kw>
+<status status="FAIL" starttime="20211109 09:24:43.987" endtime="20211109 09:24:45.888">ValueError: Element locator '//*[contains(@text,"REDO")]' did not match any elements.</status>
+</test>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20211109 09:24:45.890" endtime="20211109 09:24:46.313"/>
+</kw>
+<status status="FAIL" starttime="20211109 09:23:44.304" endtime="20211109 09:24:46.313"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="UserstoryPSgear-ll">UserstoryPSgear-ll</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

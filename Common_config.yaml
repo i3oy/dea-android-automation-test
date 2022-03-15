@@ -1,0 +1,82 @@
+#thailand
+usernameTDEM :  knundhap
+passwordTDEM :  1234@abcd
+
+usernameTH: deathboy
+passwordTH : 1234@Abcd3
+
+#Malaysia
+usernamemy : deamyboy
+passwordmy : 1234@Abcd3
+
+#Not stay dealer
+username :   deadlrvn
+password :   1234@Abcd2
+
+usernamenostay :   deadlrin
+passwordnostay :   1234@Abcd
+
+#Username invalid
+usernameinvalid : invalid1
+
+#Username invalid
+passwordinvalid : passwordinvalid1
+
+#Username > 8 digit
+usernamemorethan8 : 999999999
+usernameequal8 : 88888888
+usernamelessthan8 : 7777777
+usernameeng : TESTEng
+usernameengandnumber : Test123
+
+#available Part
+PARTTURBO : TURBO
+PARTSHOCK : SHOCK
+PARTV-BELT : V-BELT
+PARTREARENGINE : REAR
+PARTSTEERING : STEERING
+PARTSEAT : SEAT
+PARTCYLINDER : CYLINDER
+PARTWATERPUMP : WATER PUMP
+PARTBLOWER : AC BLOWER
+DUMMY : DUMMY
+CHASSIS : CHASSIS
+ENGINE : ENGING
+PSG : POWER
+
+
+#app
+AppTDEM : T-diag DEV
+#AppTDEM : T-diag UAT
+
+
+#Lot cod
+CODE : XH1127N
+OTHERPRODUCT : Test other products
+TESTCOMMENT : Test comment
+FAILUREPART : Test other failure parts
+OTHERPHENOMENON : Test other phenomenon
+COMMENT250 : English texts for beginners to practice reading and comprehension online and for free. Practicing your comprehension of written English will both improve your vocabulary and understanding of grammar and word order. The texts below are designed help you de
+COMMENT>250 : Variables are returned as a special dictionary that allows accessing variables in space, case, and underscore insensitive manner similarly as accessing variables in the test data. This dictionary supports all same operations as normal Python example and, for dictionaries
+COMMENTINT5 : 12345
+COMMENTINT>5 : 123456
+COMMENTINT6 : 123456
+COMMENTINT>6 : 1234567
+complaint : Customer complaint 33-1
+complaintQ3 :  fill comment box 'Commercial 33-1'
+Highway : 40
+Highway1 : 50
+City : 60
+damage : damage
+N120 : 120
+N140 : 140
+N100 : 100
+test 33-1 42 : test 33-1 42
+mountain : mountain
+N2 : 2
+N3 : 3
+N90 : 90
+N10: 10
+N0 : 0
+Employee : Employee Employee Employee Employee Employee Employee Employee Employee Employee Employee Employee E
+
